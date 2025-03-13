@@ -1,7 +1,7 @@
 import json
 
 class Pokemon:
-    def __init__(self, id, lvl, iv, ev):
+    def __init__(self, id, lvl, iv, ev, nature):
         with open("pokemon.json", "r") as f:
             pokedb = json.load(f)
             try:
@@ -18,14 +18,17 @@ class Pokemon:
         if lvl > 100 or lvl < 1:
             raise ValueError("Level out of range")
         self.lvl = lvl
-        # we consider we always start by pv and the IV variable is always IV class
+        # we consider we always start by pv and the IV, EV and nature variables are always their respective class
         index = 1
         ivs = iv.getIVs()
         evs = ev.getStats()
+        naturedata = nature.getValues()
         for currentStat in ivs:
             # https://www.pokepedia.fr/Statistique#D%C3%A9termination_des_statistiques
             if currentStat == "pv":
-                self.stat[currentStat] = round(((2*self.stat[currentStat]+ivs.get(currentStat)+evs.get(currentStat)*self.lvl)/100)+lvl+10)
+                self.stat[currentStat] = round((((2*self.stat[currentStat]+ivs.get(currentStat)+evs.get(currentStat))*self.lvl)/100)+lvl+10)
+            else:
+                self.stat[currentStat] = round(((((2*self.stat[currentStat]+ivs.get(currentStat)+evs.get(currentStat))*self.lvl)/100)+5)*naturedata["modifiers"][currentStat])
             index += 1
             
 class IV:
@@ -59,3 +62,19 @@ class EV:
         self.defSpe = round(self.defSpe / 4)
         self.speed = round(self.speed / 4)
         return {"pv": self.pv, "atk": self.atk, "def": self.defense, "atkSpe": self.atkSpe, "defSpe": self.defSpe, "speed": self.speed}
+    
+class Nature:
+    def __init__(self, id):
+        if id < 0 or id > 24:
+            raise ValueError("Nature out of range")
+        self.id = id
+        with open("nature.json", "r") as f:
+            naturedb = json.load(f)
+            try:
+                nature = naturedb["nature"][id]
+            except IndexError:
+                raise IndexError("Pokémon Not Found")
+            self.name = nature["name"]
+            self.modifiers = nature["modifiers"]
+    def getValues(self):
+        return {"id": self.id, "name": self.name, "modifiers": self.modifiers}

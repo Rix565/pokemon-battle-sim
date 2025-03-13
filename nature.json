@@ -1,0 +1,254 @@
+
+{
+    "nature": [{
+        "id": 0,
+        "name": "Bold",
+        "modifiers": {
+            "atk": 0.90,
+            "def": 1.10,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 1,
+        "name": "Quirky",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 2,
+        "name": "Brave",
+        "modifiers": {
+            "atk": 1.10,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 0.90
+        }
+    },{
+        "id": 3,
+        "name": "Calm",
+        "modifiers": {
+            "atk": 0.90,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1.10,
+            "speed": 1
+        }
+    },{
+        "id": 4,
+        "name": "Quiet",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1.10,
+            "defSpe": 1,
+            "speed": 0.90
+        }
+    },{
+        "id": 5,
+        "name": "Docile",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 6,
+        "name": "Mild",
+        "modifiers": {
+            "atk": 1,
+            "def": 0.90,
+            "atkSpe": 1.10,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 7,
+        "name": "Rash",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1.10,
+            "defSpe": 0.90,
+            "speed": 1
+        }
+    },{
+        "id": 8,
+        "name": "Gentle",
+        "modifiers": {
+            "atk": 1,
+            "def": 0.90,
+            "atkSpe": 1,
+            "defSpe": 1.10,
+            "speed": 1
+        }
+    },{
+        "id": 9,
+        "name": "Hardy",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 10,
+        "name": "Jolly",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 0.90,
+            "defSpe": 1,
+            "speed": 1.10
+        }
+    },{
+        "id": 11,
+        "name": "Lax",
+        "modifiers": {
+            "atk": 1,
+            "def": 1.10,
+            "atkSpe": 1,
+            "defSpe": 0.90,
+            "speed": 1
+        }
+    },{
+        "id": 12,
+        "name": "Impish",
+        "modifiers": {
+            "atk": 1,
+            "def": 1.10,
+            "atkSpe": 0.90,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 13,
+        "name": "Sassy",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1.10,
+            "speed": 0.90
+        }
+    },{
+        "id": 14,
+        "name": "Naughty",
+        "modifiers": {
+            "atk": 1.10,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 0.90,
+            "speed": 1
+        }
+    },{
+        "id": 15,
+        "name": "Modest",
+        "modifiers": {
+            "atk": 0.90,
+            "def": 1,
+            "atkSpe": 1.10,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 16,
+        "name": "Naive",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 0.90,
+            "speed": 1.10
+        }
+    },{
+        "id": 17,
+        "name": "Hasty",
+        "modifiers": {
+            "atk": 1,
+            "def": 0.90,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1.10
+        }
+    },{
+        "id": 18,
+        "name": "Careful",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 0.90,
+            "defSpe": 1.10,
+            "speed": 1
+        }
+    },{
+        "id": 19,
+        "name": "Bashful",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 20,
+        "name": "Relaxed",
+        "modifiers": {
+            "atk": 1,
+            "def": 1.10,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 0.90
+        }
+    },{
+        "id": 21,
+        "name": "Adamant",
+        "modifiers": {
+            "atk": 1.10,
+            "def": 1,
+            "atkSpe": 0.90,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 22,
+        "name": "Serious",
+        "modifiers": {
+            "atk": 1,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 23,
+        "name": "Lonely",
+        "modifiers": {
+            "atk": 1.10,
+            "def": 0.90,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1
+        }
+    },{
+        "id": 24,
+        "name": "Timid",
+        "modifiers": {
+            "atk": 0.90,
+            "def": 1,
+            "atkSpe": 1,
+            "defSpe": 1,
+            "speed": 1.10
+        }
+    }]
+}
