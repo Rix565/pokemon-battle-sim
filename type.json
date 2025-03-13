@@ -1,0 +1,111 @@
+{
+  "type": [{
+    "id": 0,
+    "name": "Fire",
+    "vulnerability": [1,12,14],
+    "resistance": [13,0,5,3,2],
+    "immune": []
+  },{
+    "id": 1,
+    "name": "Water",
+    "vulnerability": [4,2],
+    "resistance": [13,2,0,5],
+    "immune": []
+  },{
+    "id": 2,
+    "name": "Grass",
+    "vulnerability": [0,5,3,7,9],
+    "resistance": [1,4,2,14],
+    "immune": []
+  },{
+    "id": 3,
+    "name": "Bug",
+    "vulnerability": [0,12,9],
+    "resistance": [8,2,14],
+    "immune": []
+  },{
+    "id": 4,
+    "name": "Electric",
+    "vulnerability": [14],
+    "resistance": [13,4,9],
+    "immune": []
+  },{
+    "id": 5,
+    "name": "Ice",
+    "vulnerability": [13,8,0,12],
+    "resistance": [5],
+    "immune": []
+  },{
+    "id": 6,
+    "name": "Psychic",
+    "vulnerability": [3,10,11],
+    "resistance": [8,6],
+    "immune": []
+  },{
+    "id": 7,
+    "name": "Poison",
+    "vulnerability": [6,14],
+    "resistance": [8,3,2,7,16],
+    "immune": []
+  },{
+    "id": 8,
+    "name": "Fighting",
+    "vulnerability": [16,6,9],
+    "resistance": [3,12,10],
+    "immune": []
+  },{
+    "id": 9,
+    "name": "Flying",
+    "vulnerability": [4,5,12],
+    "resistance": [8,3,2],
+    "immune": [14]
+  },{
+    "id": 10,
+    "name": "Dark",
+    "vulnerability": [8,16,13],
+    "resistance": [11,10],
+    "immune": [6]
+  },{
+    "id": 11,
+    "name": "Ghost",
+    "vulnerability": [11,10],
+    "resistance": [3,7],
+    "immune": [8,17]
+  },{
+    "id": 12,
+    "name": "Rock",
+    "vulnerability": [13,8,1,2,14],
+    "resistance": [0,17,7,9],
+    "immune": []
+  },{
+    "id": 13,
+    "name": "Steel",
+    "vulnerability": [8,0,14],
+    "resistance": [13,15,16,5,3,17,2,6,12,9],
+    "immune": [7]
+  },{
+    "id": 14,
+    "name": "Ground",
+    "vulnerability": [1,5,2],
+    "resistance": [7,12],
+    "immune": [4]
+  },{
+    "id": 15,
+    "name": "Dragon",
+    "vulnerability": [15,16,5],
+    "resistance": [1,4,0,2],
+    "immune": []
+  },{
+    "id": 16,
+    "name": "Fairy",
+    "vulnerability": [13,7],
+    "resistance": [8,3,10],
+    "immune": [15]
+  },{
+    "id": 17,
+    "name": "Normal",
+    "vulnerability": [8],
+    "resistance": [],
+    "immune": [11]
+  }]
+}

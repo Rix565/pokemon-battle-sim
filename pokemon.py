@@ -27,7 +27,7 @@ class Pokemon:
             # https://www.pokepedia.fr/Statistique#D%C3%A9termination_des_statistiques
             if currentStat == "pv":
                 self.stat[currentStat] = round((((2*self.stat[currentStat]+ivs.get(currentStat)+evs.get(currentStat))*self.lvl)/100)+lvl+10)
-            else:
+            else: 
                 self.stat[currentStat] = round(((((2*self.stat[currentStat]+ivs.get(currentStat)+evs.get(currentStat))*self.lvl)/100)+5)*naturedata["modifiers"][currentStat])
             index += 1
             
@@ -65,16 +65,49 @@ class EV:
     
 class Nature:
     def __init__(self, id):
-        if id < 0 or id > 24:
-            raise ValueError("Nature out of range")
         self.id = id
         with open("nature.json", "r") as f:
             naturedb = json.load(f)
             try:
                 nature = naturedb["nature"][id]
             except IndexError:
-                raise IndexError("Pokémon Not Found")
+                raise IndexError("Nature Not Found")
             self.name = nature["name"]
             self.modifiers = nature["modifiers"]
+            f.close()
     def getValues(self):
         return {"id": self.id, "name": self.name, "modifiers": self.modifiers}
+
+class Type:
+  def __init__(self, id=0):
+    self.id = id
+    with open("type.json", "r") as f:
+            typedb = json.load(f)
+            try:
+              type = typedb["type"][id]
+            except IndexError:
+                raise IndexError("Type Not Found")
+            self.name = type["name"]
+            self.vulnerability = type["vulnerability"]
+            self.resistance = type["resistance"]
+            self.immune = type["immune"]
+  def getEffectiveness(self, pokemon):
+    type1 = Type(pokemon.type1)
+    if pokemon.type2 != None:
+      type2 = Type(pokemon.type2)
+      if self.id in type1.vulnerability and self.id in type2.vulnerability:
+        return 1.25
+      elif self.id in type1.vulnerability or self.id in type2.vulnerability:
+        return 1.10
+      elif self.id in type1.resistance and self.id in type2.resistance:
+        return 0.75
+      elif self.id in type1.resistance or self.id in type2.resistance:
+        return 0.90
+      else:
+        return 1
+    elif self.id in type1.vulnerability:
+      return 1.10
+    elif self.id in type1.resistance:
+      return 0.90
+    else:
+      return 1

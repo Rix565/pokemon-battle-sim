@@ -6,9 +6,9 @@ different values for types:
 4: electric
 5: ice
 6: psychic
-7: ground
+7: poison
 8: fighting
-9: rock
+9: flying
 10: dark
 11: ghost
 12: rock
@@ -16,8 +16,7 @@ different values for types:
 14: ground
 15: dragon
 16: fairy
-17: flying
-18: normal
+17: normal
 
 different values for nature:
 0: bold
