@@ -1,0 +1,47 @@
+different values for types:
+0: fire
+1: water
+2: grass
+3: bug
+4: electric
+5: ice
+6: psychic
+7: ground
+8: fighting
+9: rock
+10: dark
+11: ghost
+12: rock
+13: steel
+14: ground
+15: dragon
+16: fairy
+17: flying
+18: normal
+
+different values for nature:
+0: bold
+1: quirky
+2: brave
+3: calm
+4: quiet
+5: docile
+6: mild
+7: rash
+8: gentle
+9: hardy
+10: jolly
+11: lax
+12: impish
+13: sassy
+14: naughty
+15: modest
+16: naive
+17: hasty
+18: careful
+19: bashful
+20: relaxed
+21: adamant
+22: serious
+23: lonely
+24: timid
